@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+          width:60%;
+          border-collapse: collapse;
+          margin: 20px;
+      }
+      th, td {
+          border: 1px solid #ddd;
+          padding: 10px;
+          text-align: left;
+      }
+      th {
+          background-color: #f2f2f2;
+      }
+  </style>
+  </head>
+  <body>
+    <h1 id="demo">Hello</h1>
+    <h1 id="demo2">Hello</h1>
+    <h1 id="demo1">Hello</h1>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = 'My First JavaScript'"
+    >
+      Click me
+    </button>
+    <button type="button" onclick="myFunction()">Click me</button>
+    <button type="button" onclick="lightOn()">Turn on the light</button>
+    <img src="Light off.png" alt="light bulb" id="bulb" />
+    <button type="button" onclick="lightOff()">Turn off the light</button>
+    <button type="button" onclick="redirect()">Next Page</button>
+    <button type="button" onclick="redirect2()">Another Page</button>
+    <table border=".3">
+      <tr>
+        <th>Keyword</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>var</td>
+        <td>declares a variable</td>
+      </tr>
+      <tr>
+        <td>let</td>
+        <td>declares a block variable</td>
+      </tr>
+      <tr>
+        <td>const</td>
+        <td>declare a block constant</td>
+      </tr>
+      <tr>
+        <td>if</td>
+        <td>Marks a block of statements to be executed on a condition</td>
+      </tr>
+      <tr>
+        <td>switch</td>
+        <td>Marks a block of statements to be executed in different cases</td>
+      </tr>
+      <tr>
+        <td>for</td>
+        <td>Marks a block of statements to be executed in a loop</td>
+      </tr>
+      <tr>
+        <td>function</td>
+        <td>Declares a function</td>
+      </tr>
+      <tr>
+        <td>return</td>
+        <td>Exits a function</td>
+      </tr>
+      <tr>
+        <td>try</td>
+        <td>Implements error handling to a block of statements</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Function Literals (function Declarations):</td>
+        <td>function myFunction(){ // function body }</td>
+      </tr>
+      <tr>
+        <td>Regular Expression Literals:</td>
+        <td>let regexliteral =/pattern/;</td>
+      </tr>
+      <tr>
+        <td>Null Literal:</td>
+        <td>let nullLiteral = null;</td>
+      </tr>
+      <tr>
+        <td>Undefined Literal:</td>
+        <td>let undefinedLiteral = undefined;</td>
+      </tr>
+      <tr>
+        <td>Numeric Literals:</td>
+        <td>let numberLiteral = 42; , let floatLiteral = 3.14;</td>
+      </tr>
+      <tr>
+        <td>String Literals:</td>
+        <td>let stringLiteral = "Hello,World!";</td>
+      </tr>
+      <tr>
+        <td>Boolean Literals:</td>
+        <td>let trueLiteral = true; , let falseLiteral = false;</td>
+      </tr>
+    </table>
+    
+    <script>
+      // document.getElementById("demo").innerHTML = "My First JavaScript";
+      function myFunction() {
+        document.getElementById("demo2").innerHTML = "Use Function";
+        document.getElementById("demo1").innerHTML = "Use Function2";
+      }
+      function lightOn() {
+        document.getElementById("bulb").src = "Light on.png";
+      }
+      function lightOff() {
+        document.getElementById("bulb").src = "Light off.png";
+      }
+      function redirect() {
+        window.location.href = "light.html";
+      }
+      function redirect2() {
+        window.location.href = "dark.html";
+      }
+    </script>
+  </body>
+</html>
